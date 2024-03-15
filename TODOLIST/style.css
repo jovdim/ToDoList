@@ -1,0 +1,106 @@
+/* *{
+  border: red solid 1px;
+} */
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: lightsteelblue;
+
+}
+h2{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#main {
+  background: hsla(233, 100%, 90%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(233, 100%, 90%, 1) 0%,
+    hsla(0, 0%, 89%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(233, 100%, 90%, 1) 0%,
+    hsla(0, 0%, 89%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(233, 100%, 90%, 1) 0%,
+    hsla(0, 0%, 89%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CAD0FF", endColorstr="#E3E3E3", GradientType=1 );
+
+  height: 100vh;
+  width: 460px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  gap: 6px;
+  display: flex;
+  padding: 14px;
+  align-items: center;
+  justify-content: center;
+}
+.container .input-text,.input-datetime {
+  padding-left: 8px;
+  border: none;
+  background-color: #f1faee;
+  height: 40px;
+  width: 220px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+.container .submit-btn {
+  background-color: #edf6f9;
+  border: lightgray solid 1px;
+  height: 43px;
+  width: 50px;
+  border-radius: 4px;
+  
+}
+.container .submit-btn:hover {
+  background-color: white;
+}
+.container .submit-btn:active {
+  background-color: lightgray;
+}
+p {
+  display: inline-block;
+}
+
+.input-datetime {
+  width: 130px;
+}
+.content {
+
+  
+}
+.delete-btn{
+  background-color: darkred;
+  color: white;
+  border-radius: 4px;
+  height: 40px;
+  padding: 0 8px;
+  border: none;
+}
+.todo-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  margin: 4px;
+   background-color: #fff;
+   border-radius: 14px;
+   padding: 0 12px;
+}
