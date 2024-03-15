@@ -91,6 +91,9 @@ p {
   padding: 0 8px;
   border: none;
 }
+.delete-btn:active{
+background-color: lightgray;
+}
 .todo-content {
   display: flex;
   justify-content:space-between;
