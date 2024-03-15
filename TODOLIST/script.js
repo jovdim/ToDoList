@@ -15,7 +15,7 @@ showAndDeleteSome();
 function showAndDeleteSome() {
   let getvalue = ``;
   for (let x = 0; todoArray.length > x; x++) {
-    getvalue += `<div class="todo-content"><p>${todoArray[x].todoName}</p><p>${todoArray[x].todoDate}</p>
+    getvalue += `<div class="todo-content "><p>${todoArray[x].todoName}</p><p>${todoArray[x].todoDate}</p>
     <button class="delete-btn js-delete-button">Delete</button> 
     </div>`;
   }
@@ -40,6 +40,18 @@ document.body.addEventListener("keypress", (event) => {
   }
 });
 
-document.querySelector(".js-submit-btn").addEventListener("click", () => {
+const submitElem = document.querySelector(".js-submit-btn");
+let timeOutId;
+submitElem.addEventListener("click", () => {
+  if (submitElem.innerText === "Enter") {
+    submitElem.innerText = "Added";
+  }
+
+  clearTimeout(timeOutId);
+  timeOutId = setTimeout(() => {
+    if (submitElem.innerText === "Added") {
+      submitElem.innerText = "Enter";
+    }
+  }, 2000);
   setToDo();
 });
