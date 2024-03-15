@@ -104,6 +104,26 @@ background-color: lightgray;
   border-radius: 14px;
   padding: 0 12px;
 }
+
+
+@media (max-width: 456px) {
+  .container .input-text,
+  .input-datetime{
+    width: 190px;
+
+  }
+  .input-datetime {
+    width:120px;
+  }
+  #main {
+    width: 410px;
+  }
+  .todo-content{
+    width: 360px;
+  }
+}
+
+
 @media (max-width: 400px) {
   .container .input-text,
   .input-datetime{
@@ -120,3 +140,4 @@ background-color: lightgray;
     width: 300px;
   }
 }
+
